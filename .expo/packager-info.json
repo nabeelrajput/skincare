@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": "https://zg-tzk.anonymous.beautysaloon.exp.direct",
-  "packagerNgrokUrl": "https://packager.zg-tzk.anonymous.beautysaloon.exp.direct",
-  "ngrokPid": 4700,
+  "packagerPort": 19001,
+  "packagerPid": 9836,
+  "expoServerNgrokUrl": "https://zg-tzk.anonymous.skincare.exp.direct",
+  "packagerNgrokUrl": "https://packager.zg-tzk.anonymous.skincare.exp.direct",
+  "ngrokPid": 13160,
   "webpackServerPort": null
 }

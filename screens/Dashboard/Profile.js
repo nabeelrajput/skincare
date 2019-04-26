@@ -34,8 +34,9 @@ class Profile extends React.Component {
                    <View style={{width:'100%',alignItems:'flex-end'}}>
                         <View style={{flexDirection:'row'}}>
                                 <AntDesign name="setting" style={{fontSize:26,paddingTop:10,paddingLeft:10,color:'white'}}/>
-                                <MaterialCommunityIcons name="logout" style={{fontSize:26,padding:10,color:'white'}}/>
-                        
+                                <TouchableOpacity onPress={() =>{this.props.navigation.navigate('Product')}}>
+                                    <MaterialCommunityIcons name="logout" style={{fontSize:26,padding:10,color:'white'}}/>
+                                </TouchableOpacity>
                         </View>
                     
                     </View>
@@ -114,14 +115,14 @@ class Profile extends React.Component {
                 <View style={{flex:3,flexDirection: 'row',backgroundColor:'#C8A7E6',width:'100%',borderRadius:15}}>
                     <View style={styles.popularBlogs}>
                         <View style={{flexDirection:'row',alignItems:'center',justifyContent:'center', width:'100%'}}>
-                            <Card style={{borderRadius:8,width:'32%',marginLeft:'1%',alignItems:'center',justifyContent:'center'}}>
-                                <Image source={CardImage5} style={{height:'60%',width:'60%'}}/>
+                            <Card style={{borderRadius:8,width:'32%',marginLeft:'1%',alignItems:'center',justifyContent:'center',height:'90%'}}>
+                                <Image source={CardImage5} style={{height:'40%',width:'30%'}}/>
                             </Card>
-                            <Card style={{borderRadius:8,width:'32%' ,marginLeft:'1%',alignItems:'center',justifyContent:'center'}}>
-                                <Image source={CardImage6} style={{height:'60%',width:'60%'}}/>
+                            <Card style={{borderRadius:8,width:'32%' ,marginLeft:'1%',alignItems:'center',justifyContent:'center',height:'90%'}}>
+                                <Image source={CardImage6} style={{height:'40%',width:'30%'}}/>
                             </Card>
-                            <Card style={{borderRadius:8,width:'32%',marginLeft:'1%',marginRight:'1%',alignItems:'center',justifyContent:'center'}}>
-                                <Image source={CardImage7} style={{height:'60%',width:'60%'}}/>
+                            <Card style={{borderRadius:8,width:'32%',marginLeft:'1%',marginRight:'1%',alignItems:'center',justifyContent:'center',height:'90%'}}>
+                                <Image source={CardImage7} style={{height:'40%',width:'30%'}}/>
                             </Card>                            
                         </View>
                     </View>

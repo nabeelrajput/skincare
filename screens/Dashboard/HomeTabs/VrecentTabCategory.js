@@ -3,7 +3,7 @@ import {ImageBackground  , Button,SafeAreaView,Text,StyleSheet, View,Image ,Flat
 import Search from './VSearch';
 import {Card} from 'native-base'
 import CardImage from '../../../assets/CardImage.png';
-import Video from 'react-native-video';
+// import Video from 'react-native-video';
 // import VIDEO from '../../../assets/video.WMV';
 
 

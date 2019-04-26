@@ -244,11 +244,6 @@ const DashboardScreenStack = createSwitchNavigator({
 
 
 
-
-
-
-
-
 const ViewTab = createAppContainer(DashboardScreenStack,ProductStack);
 
 const styles = StyleSheet.create({
