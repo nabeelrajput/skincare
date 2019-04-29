@@ -9,7 +9,6 @@ class SignupTab extends React.Component {
         header:null
     }
     render() {
-        
         return (
             <ImageBackground source={backgroundImage} style={{width:'100%',height:'100%'}}>
                 <View style={styles.container}>

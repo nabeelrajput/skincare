@@ -1,25 +1,30 @@
 import React from 'react';
-import {ImageBackground  , Button,SafeAreaView,Text,StyleSheet, View,Image ,FlatList, ScrollView} from 'react-native';
+import {ImageBackground  , TouchableOpacity,TouchableHighlight,Button,SafeAreaView,Text,StyleSheet, View,Image ,FlatList, ScrollView} from 'react-native';
 import {Card} from 'native-base'
+// import console = require('console');
 
-class Home extends React.Component {
+class Rewards extends React.Component {
     static navigationOptions = {
         header:null
     }
     render() {
+        
         return (
-            <Card style={{borderRadius:8,height:80,width:100}}>
-                    <View style={{alignItems:'center',marginTop:'4%',top:15.
-                }}>
-                        <Image source={this.props.imageUri} style={{height:28, width:28,resizeMode:'cover',margin:'5%'}}/>
-                        <Text style={{fontSize:10}}>{this.props.name}</Text>
-                    </View>
+            // <TouchableHighlight  onPress={() => navigate('product')}>
+                <Card style={{borderRadius:8,height:80,width:100}}>
+                        <View style={{alignItems:'center',marginTop:'4%',top:15
+                    }}>
+                            <Image source={this.props.imageUri} style={{height:28, width:28,resizeMode:'cover',margin:'5%'}}/>
+                            <Text style={{fontSize:10}}>{this.props.name}</Text>
+                        </View>
 
-            </Card>
+                </Card>
+            // </TouchableHighlight >
+
         );
     }
 }
-export default Home;
+export default Rewards;
 
 const styles = StyleSheet.create({
     container: {

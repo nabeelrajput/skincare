@@ -219,9 +219,8 @@ const TabNavigatorNotification= createMaterialTopTabNavigator({
         }
     
     });
-    
     const ProductStack = createSwitchNavigator({
-        Product:{screen:Product}
+        product:{screen:Product}
     },{
         // initialRouteName: 'TabNavigator',
         navigationOptions:{

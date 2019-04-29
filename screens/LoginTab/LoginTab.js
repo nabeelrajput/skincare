@@ -12,6 +12,8 @@ class LoginTab extends React.Component {
 
     render() {
         const { navigate } = this.props.navigation;
+        
+
         return (
             <ImageBackground source={backgroundImage} style={{width:'100%',height:'100%'}}>
             <View style={styles.container}>

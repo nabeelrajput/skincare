@@ -17,6 +17,7 @@ import CardImage7 from '../../assets/morning.png';
 
 import Rewards from './Profile/Rewards';
 import Awars from './Profile/Awars';
+// import console = require('console');
 
 class Profile extends React.Component {
     static navigationOptions = {
@@ -24,35 +25,32 @@ class Profile extends React.Component {
     }
 
     render() {
-        console.log(this.props.navigation)
+        const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
-            <TouchableOpacity onPress={() =>{this.props.navigation.navigate('Product')}}>
-                <Image source={RONALDO} style={{zIndex:1,top:20,position: 'absolute',width:'25%',height:'15%',borderRadius:45,borderColor:'#C8A7E6'}} />
-                </TouchableOpacity>
+                <Image  source={RONALDO} style={{zIndex:1,top:20,position: 'absolute',width:'25%',height:'15%',borderRadius:45,borderColor:'#C8A7E6'}} />
                 <View style={{flex:4,marginTop:'16%',backgroundColor:'#C8A7E6',width:'100%',borderRadius:15}}>
                    <View style={{width:'100%',alignItems:'flex-end'}}>
                         <View style={{flexDirection:'row'}}>
                                 <AntDesign name="setting" style={{fontSize:26,paddingTop:10,paddingLeft:10,color:'white'}}/>
-                                <TouchableOpacity onPress={() =>{this.props.navigation.navigate('Product')}}>
+                                <TouchableOpacity onPress={() =>navigate('product')}>
                                     <MaterialCommunityIcons name="logout" style={{fontSize:26,padding:10,color:'white'}}/>
                                 </TouchableOpacity>
                         </View>
-                    
                     </View>
                    <View style={{width:'100%',flexDirection: 'row'}}>
                         <View style={{width:'35%',alignItems:'center',justifyContent:'center'}}>
                             <Image source={MEDAL} style={{height:'48%',width:'30%'}}/>
                             <Text style={{color:'#ffffff'}}>50</Text>
                         </View>
-                        <View style={{width:'30%',alignItems:'center'}}>
-                            <TouchableOpacity onPress={() =>{this.props.navigation.navigate('Product')}}>
-                                <View>
+                        <View onPress={()=>navigate('product')} style={{width:'30%',alignItems:'center'}}>
+                            {/* <TouchableOpacity onPress={() =>{this.props.navigation.navigate('Product')}}> */}
+                                <View onPress={()=>navigate('product')}>
                                     <Text style={{color:'#ffffff',fontSize:16}}>
                                         Emiley
                                     </Text>
                                 </View>
-                            </TouchableOpacity>
+                            {/* </TouchableOpacity> */}
                             
                             <Text style={{color:'#ffffff',fontSize:12}}>
                                 Kansas City, US
@@ -73,7 +71,7 @@ class Profile extends React.Component {
                    >
                         <View style={{paddingTop:10,flexDirection:'row'}}>
                             <View style={{flexDirection:'row',alignItems:'flex-start',color:'white',fontSize:18,paddingLeft:6,width:'80%'}}>
-                                <Text style={{color:'white',fontWeight:'bold'}}>Now Live</Text>
+                                <Text style={{color:'white'}}>Now Live</Text>
                             </View>
                             <View style={{alignItems:'flex-end',flexDirection:'row',width:'20%'}}>
                                 <Text style={{color:'white'}}>view more</Text>
@@ -135,9 +133,9 @@ class Profile extends React.Component {
                             <View style={{flexDirection:'row',alignItems:'flex-start',color:'white',fontSize:12,paddingLeft:6,width:'80%'}}>
                                 <Text style={{color:'white',fontWeight:'bold'}}>Photo Gallary</Text>
                             </View>
-                            <View style={{alignItems:'flex-end',flexDirection:'row',width:'20%'}}>
-                                <Text style={{color:'white'}}>Gallary > </Text>
-                            </View>
+                                <View style={{alignItems:'flex-end',flexDirection:'row',width:'20%'}}>
+                                    <Text style={{color:'white'}}>Gallary > </Text>
+                                </View>
                         </View>
                     <View style={{margin:'5%',flexDirection:'row',alignItems:'center',justifyContent:'center',top:-15}}>
                         <Card style={{borderRadius:'8',fontSize:12,width:'48%',margin:'2%',alignItems:'center',justifyContent:'center'}}>
